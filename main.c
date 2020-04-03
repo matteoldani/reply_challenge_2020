@@ -6,9 +6,17 @@
 #define MAX_M 20000
 #define MAX_S 100
 
+/*
+ANDREBBE MIGLIORATO IL PATH CON CUI INIZIO A POISIZINARE
+SAREBBE MEGLIO TROVARE UN PUNTO CENTRALE E PROCEDERE A SPIRALE
+
+ANDREBBE CREATA UNA FUNZIONE CHE TROVI IL MIGLIORE DA CUI INIZIARE E
+NON PRENDERLO A CASO
+*/
+
 typedef struct
 {
-    int posizionato; //lo metto a 1 quando lo siedo
+    int posizionato; //lo metto a 1 quando lo posiziono
     char company[6];
     int bonus_potential;
     int tot_skills;
@@ -18,7 +26,7 @@ typedef struct
 
 typedef struct
 {
-    int posizionato; //lo metto a 1 quando lo siedo
+    int posizionato; //lo metto a 1 quando lo posiziono
     char company[6];
     int bonus_potential;
     int x,y;
